@@ -1,0 +1,21 @@
+{
+  "name": "local-static-file-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Minsung Kim <epicblue@hanmail.net>",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon dist/index.js"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.8",
+    "nodemon": "^2.0.15",
+    "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2"
+  }
+}
