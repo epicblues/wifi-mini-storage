@@ -43,5 +43,8 @@ app.get("/download*", (req, res) => {
 
   res.send(settingTemplateBody(htmlBuffer.join("")));
 });
+import { address } from "./config/networkInterfaces";
 
-app.listen(PORT, () => console.log("listening on port : " + PORT));
+app.listen(PORT, () =>
+  console.log(`listening on this address : http://${address}:${PORT}`)
+);
